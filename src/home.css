@@ -130,6 +130,10 @@
   width: calc(25% - 30px);
   height: auto;
   transition: all 0.2s ease-in-out;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding-top: 12px;
 
   figure {
     aspect-ratio: 1/1;
@@ -155,13 +159,13 @@
 
   h3 {
     font-size: 2rem;
-    color: #472918;
+    color: #bdaa81;
     text-transform: uppercase;
   }
 
   a {
     margin-top: -10px;
-    color: #472918;
+    color: #bdaa81;
     font-size: 1rem;
     transition: all 0.2s ease-in-out;
 
@@ -197,7 +201,7 @@
 .result {
   h3 {
     font-size: 3rem;
-    color: #472918;
+    color: #bdaa81;
     text-transform: uppercase;
   }
 
@@ -286,17 +290,23 @@
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  color: #472918;
+  color: #bdaa81;
   text-shadow: 0 0 5px #472918;
   font-size: 1.3rem;
 
   button {
     width: 70%;
+    color: #bdaa81;
+    border-color: #bdaa81;
+
+    &::after{
+      border-color: #bdaa81;
+    }
   }
 }
 
 .footer {
-  color: #472918;
+  color: #bdaa81;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
